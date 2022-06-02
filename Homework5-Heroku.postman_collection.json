@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "976ea29f-3c5c-419e-83e4-dd47fdf2fd39",
+		"name": "Homework5-Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://safe-inlet-40784.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"safe-inlet-40784",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": \"6277c8583880cdbd1582f658\",\n    \"content\": \"測試關聯資料5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://safe-inlet-40784.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"safe-inlet-40784",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://safe-inlet-40784.herokuapp.com/posts/apis",
+					"protocol": "https",
+					"host": [
+						"safe-inlet-40784",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"apis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://safe-inlet-40784.herokuapp.com/posts/api/6290f809b6f3686c96a05f7b",
+					"protocol": "https",
+					"host": [
+						"safe-inlet-40784",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"api",
+						"6290f809b6f3686c96a05f7b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新一筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": \"6277c8583880cdbd1582f658\",\n    \"content\": \"測試關聯資料10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://safe-inlet-40784.herokuapp.com/posts/6290fbc926d5ccaf55c43cf3",
+					"protocol": "https",
+					"host": [
+						"safe-inlet-40784",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6290fbc926d5ccaf55c43cf3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
